@@ -41,20 +41,10 @@ h3{
     padding: 20px;
     place-items: center;
 }
-
-.supervisor {
+.team-builder {
+    display: flex;
     grid-column: 2 / 4;
     grid-row: 1 / 2;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    border-top: 5px solid hsl(180, 62%, 55%);
-    box-shadow: 0 5px 10px black;
-}
-
-.team-builder {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
@@ -62,7 +52,19 @@ h3{
     box-shadow: 0 5px 10px black;
 }
 
+.supervisor {
+    display: flex;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border-top: 5px solid hsl(180, 62%, 55%);
+    box-shadow: 0 5px 10px black;
+}
+
 .karma {
+    display: flex;
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     padding: 20px;
@@ -73,6 +75,7 @@ h3{
 }
 
 .calculator {
+    display: flex;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     padding: 20px;
