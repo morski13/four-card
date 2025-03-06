@@ -32,8 +32,8 @@ p {
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 0.5fr 1fr; /* Prva i treća kartica imaju istu visinu, a srednja je manja */
-    gap: 0; /* Uklonjena rupa između redova */
+    grid-template-rows: 1fr 1fr 1fr; /* Svaka kartica ima istu visinu */
+    gap: 0; /* Uklonjen razmak između redova */
     place-items: center;
     justify-content: center;
     align-content: center;
@@ -63,25 +63,25 @@ p {
 
 .team-builder {
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    grid-row: 1 / 2; /* Prva kartica */
     border-top: 5px solid hsl(180, 62%, 55%);
 }
 
 .supervisor {
     grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    grid-row: 2 / 3; /* Druga kartica (u sredini) */
     border-top: 5px solid hsl(0, 78%, 62%);
 }
 
 .karma {
     grid-column: 3 / 4;
-    grid-row: 2 / 3;
+    grid-row: 2 / 3; /* Treća kartica (u sredini) */
     border-top: 5px solid hsl(34, 97%, 64%);
 }
 
 .calculator {
     grid-column: 2 / 3;
-    grid-row: 3 / 4;
+    grid-row: 3 / 4; /* Četvrta kartica */
     border-top: 5px solid hsl(209, 69%, 60%);
 }
 
