@@ -31,9 +31,9 @@ p {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr); /* Svaka kartica ima istu visinu */
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* Tri kolone */
+    grid-template-rows: 1fr 1fr 1fr; /* Tri reda */
+    gap: 20px; /* Razmak između kartica */
     place-items: center;
     justify-content: center;
     align-content: center;
@@ -62,28 +62,30 @@ p {
 }
 
 .team-builder {
-    margin-top: 0.5fr;
-    grid-column: 2 / 3;
-    grid-row: 1 / 1.5; /* Prva kartica */
+    grid-column: 2 / 3; /* Druga kolona */
+    grid-row: 1 / 2; /* Prvi red */
     border-top: 5px solid hsl(180, 62%, 55%);
+    position: relative;
+    top: 0.5fr; /* Pomera karticu prema dole za 0.5fr */
+}
+
+.calculator {
+    grid-column: 2 / 3; /* Druga kolona */
+    grid-row: 2 / 3; /* Drugi red */
+    border-top: 5px solid hsl(209, 69%, 60%);
+    position: relative;
+    top: -0.5fr; /* Pomera karticu prema gore za 0.5fr */
 }
 
 .supervisor {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3; /* Druga kartica (u sredini) */
+    grid-column: 1 / 2; /* Prva kolona */
+    grid-row: 2 / 3; /* Drugi red */
     border-top: 5px solid hsl(0, 78%, 62%);
 }
 
 .karma {
-    margin-bottom: 0.5fr;
-    grid-column: 3 / 4;
-    grid-row: 1.5 / 3; /* Treća kartica (u sredini) */
+    grid-column: 3 / 4; /* Treća kolona */
+    grid-row: 2 / 3; /* Drugi red */
     border-top: 5px solid hsl(34, 97%, 64%);
-}
-
-.calculator {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4; /* Četvrta kartica */
-    border-top: 5px solid hsl(209, 69%, 60%);
 }
 
