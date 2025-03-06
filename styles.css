@@ -64,7 +64,7 @@ p {
 .team-builder {
     margin-top: 0.5fr;
     grid-column: 2 / 3;
-    grid-row: 1 / 2; /* Prva kartica */
+    grid-row: 1 / 1.5; /* Prva kartica */
     border-top: 5px solid hsl(180, 62%, 55%);
 }
 
@@ -77,7 +77,7 @@ p {
 .karma {
     margin-bottom: 0.5fr;
     grid-column: 3 / 4;
-    grid-row: 2 / 3; /* Treća kartica (u sredini) */
+    grid-row: 1.5 / 3; /* Treća kartica (u sredini) */
     border-top: 5px solid hsl(34, 97%, 64%);
 }
 
