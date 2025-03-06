@@ -1,5 +1,5 @@
 body {
-    background-color: hsl(212, 20%, 80%);
+    background-color: hsl(0, 0%, 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,10 +12,13 @@ body {
 .intro {
     text-align: center;
     margin-bottom: 50px;
+    width: 50%;
+    gap: 20px;
 }
 
 .description {
     font-size: x-large;
+    font-weight: 200;
     color: hsl(234, 12%, 34%);
 }
 
@@ -50,14 +53,15 @@ p {
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     position: relative;
+    gap: 0;
   }
   
   .card img {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width: 40px;
-    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
   }
   
   /* Grid pozicioniranje za kartice */
@@ -67,7 +71,7 @@ p {
     border-top: 5px solid hsl(0, 78%, 62%);
   }
   
-  .column.2 {
+  .column-2 {
     grid-column: 2 / 3; /* Druga kolona */
     grid-row: 1 / 2; /* Podeli red sa ostatkom */
   }
@@ -75,6 +79,14 @@ p {
   .team-builder,
   .karma {
     margin-bottom: 20px; /* Razmak između kartica u ovoj koloni */
+  }
+
+  .team-builder{
+    border-top: 5px hsl(0, 78%, 62%);
+  }
+
+  .karma {
+    border-top: 5px hsl(34, 97%, 64%);
   }
   
   .calculator {
