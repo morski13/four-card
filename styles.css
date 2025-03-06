@@ -70,7 +70,7 @@ p {
 }
 
 .calculator {
-    grid-column: 2 / 3; /* Druga kolona */
+    grid-column: 3 / 4; /* Druga kolona */
     grid-row: 2 / 3; /* Drugi red */
     border-top: 5px solid hsl(209, 69%, 60%);
     position: relative;
@@ -84,8 +84,8 @@ p {
 }
 
 .karma {
-    grid-column: 3 / 4; /* Treća kolona */
-    grid-row: 2 / 3; /* Drugi red */
+    grid-column: 2 / 3; /* Treća kolona */
+    grid-row: 3 / 4; /* Drugi red */
     border-top: 5px solid hsl(34, 97%, 64%);
 }
 
