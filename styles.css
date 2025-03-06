@@ -1,92 +1,77 @@
-body{
+body {
     background-color: hsl(212, 20%, 80%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Poppins', sans-serif;
-    margin-top: 4rem;
+    margin: 0;
 }
 
-.description{
+.intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.description {
     font-size: x-large;
     color: hsl(234, 12%, 34%);
 }
 
-h1{
+h1 {
     color: hsl(234, 12%, 34%);
-    font-size: x-large;
+    font-size: xx-large;
 }
 
-p{
+p {
     color: hsl(212, 6%, 44%);
-    font-size: smaller;
-}
-
-h3{
-    color: hsl(234, 12%, 34%);
-}
-
-.ai{
-    font-size: small;
-    color: hsl(234, 12%, 34%);
+    font-size: medium;
 }
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 20px;
-    padding: 20px;
     place-items: center;
     justify-content: center;
     align-content: center;
 }
-.team-builder {
- 
-    grid-column: 2 / 4;
-    grid-row: 1 / 2;
-    padding: 20px;
+
+.card {
+    width: 250px;
+    height: 150px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
     border-radius: 10px;
-    border-top: 5px solid hsl(0, 78%, 62%);
-    box-shadow: 0 5px 10px black;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .supervisor {
-    
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.team-builder {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    border-top: 5px solid hsl(180, 62%, 55%);
-    box-shadow: 0 5px 10px black;
+    border-top: 5px solid hsl(0, 78%, 62%);
 }
 
 .karma {
-    
     grid-column: 3 / 4;
     grid-row: 2 / 3;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
     border-top: 5px solid hsl(34, 97%, 64%);
-    box-shadow: 0 5px 10px black;
 }
 
 .calculator {
-    
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
     border-top: 5px solid hsl(209, 69%, 60%);
-    box-shadow: 0 5px 10px black;
 }
-
-
-
-
