@@ -40,9 +40,12 @@ h3{
     gap: 20px;
     padding: 20px;
     place-items: center;
+    justify-content: center;
+    align-content: center;
 }
 .team-builder {
     display: flex;
+    flex-direction: column;
     grid-column: 2 / 4;
     grid-row: 1 / 2;
     padding: 20px;
@@ -54,6 +57,7 @@ h3{
 
 .supervisor {
     display: flex;
+    flex-direction: column;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     padding: 20px;
@@ -65,6 +69,7 @@ h3{
 
 .karma {
     display: flex;
+    flex-direction: column;
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     padding: 20px;
@@ -76,6 +81,7 @@ h3{
 
 .calculator {
     display: flex;
+    flex-direction: column;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     padding: 20px;
